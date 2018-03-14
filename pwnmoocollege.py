@@ -10,11 +10,11 @@ Cookie={
 'ccPlayer-MediaType-zjedu':'%22html5%22'
 }
 data={
-    'unitId':'30062485',
+    'unitId':'30062486',
     'courseId':'30001937',
     'playPosition':'1'
 }
-for x in range(1,1000,2):
+for x in range(1,1000,5):
     data['playPosition']=str(x)
     res=requests.post(url=url,cookies=Cookie,data=data)
     print str(x)+"/1000";
