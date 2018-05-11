@@ -1,0 +1,114 @@
+Gadgets information
+============================================================
+0x0804868d : adc al, 0x41 ; ret
+0x0804847d : adc byte ptr [eax - 0x3603a275], dl ; ret
+0x080483a4 : adc cl, cl ; ret
+0x080484b3 : add al, 0x24 ; ret
+0x080484ab : add al, 0x59 ; pop ebp ; lea esp, dword ptr [ecx - 4] ; ret
+0x08048418 : add al, 8 ; add ecx, ecx ; ret
+0x0804839e : add al, 8 ; call eax
+0x080483eb : add al, 8 ; call edx
+0x0804860c : add al, byte ptr [esi - 0x3b] ; ret
+0x080483af : add bl, dh ; ret
+0x080483ad : add byte ptr [eax], al ; add bl, dh ; ret
+0x080483ac : add byte ptr [eax], al ; add byte ptr [eax], al ; ret
+0x08048569 : add byte ptr [eax], al ; add byte ptr [edi + edi*8 - 1], al ; call esp
+0x080482c8 : add byte ptr [eax], al ; add esp, 8 ; pop ebx ; ret
+0x080483ae : add byte ptr [eax], al ; ret
+0x080484a8 : add byte ptr [ebx + 0x5d5904c4], al ; lea esp, dword ptr [ecx - 4] ; ret
+0x0804856b : add byte ptr [edi + edi*8 - 1], al ; call esp
+0x08048415 : add eax, 0x80497e0 ; add ecx, ecx ; ret
+0x0804841a : add ecx, ecx ; ret
+0x080483a2 : add esp, 0x10 ; leave ; ret
+0x0804847b : add esp, 0x10 ; nop ; mov ebx, dword ptr [ebp - 4] ; leave ; ret
+0x08048515 : add esp, 0xc ; pop ebx ; pop esi ; pop edi ; pop ebp ; ret
+0x080484a9 : add esp, 4 ; pop ecx ; pop ebp ; lea esp, dword ptr [ecx - 4] ; ret
+0x080482ca : add esp, 8 ; pop ebx ; ret
+0x0804868a : and byte ptr [edi + 0xe], al ; adc al, 0x41 ; ret
+0x0804832b : call 0x8048359
+0x080482b0 : call 0x8048376
+0x080483a0 : call eax
+0x080483ed : call edx
+0x0804856f : call esp
+0x08048481 : cld ; leave ; ret
+0x080484b0 : cld ; ret
+0x080483ab : daa ; add byte ptr [eax], al ; add byte ptr [eax], al ; ret
+0x08048688 : dec ebp ; push cs ; and byte ptr [edi + 0xe], al ; adc al, 0x41 ; ret
+0x08048352 : hlt ; mov ebx, dword ptr [esp] ; ret
+0x080482ae : in al, dx ; or al, ch ; mov ebx, 0x81000000 ; ret
+0x0804847a : inc dword ptr [ebx - 0x746fef3c] ; pop ebp ; cld ; leave ; ret
+0x0804868e : inc ecx ; ret
+0x0804868b : inc edi ; push cs ; adc al, 0x41 ; ret
+0x08048606 : inc edx ; or eax, 0x3834405 ; add al, byte ptr [esi - 0x3b] ; ret
+0x08048413 : inc esi ; add eax, 0x80497e0 ; add ecx, ecx ; ret
+0x0804841e : jbe 0x8048423 ; ret
+0x0804851e : jbe 0x8048523 ; ret
+0x080483f5 : je 0x8048421 ; add bl, dh ; ret
+0x08048514 : jecxz 0x80484a1 ; les ecx, ptr [ebx + ebx*2] ; pop esi ; pop edi ; pop ebp ; ret
+0x0804852f : jg 0x804854b ; add byte ptr [eax], al ; add esp, 8 ; pop ebx ; ret
+0x08048513 : jne 0x8048501 ; add esp, 0xc ; pop ebx ; pop esi ; pop edi ; pop ebp ; ret
+0x080483a9 : lea edi, dword ptr [edi] ; ret
+0x080483f4 : lea esi, dword ptr [esi] ; ret
+0x080484ae : lea esp, dword ptr [ecx - 4] ; ret
+0x080483a5 : leave ; ret
+0x080484aa : les eax, ptr [ecx + ebx*2] ; pop ebp ; lea esp, dword ptr [ecx - 4] ; ret
+0x080482cb : les ecx, ptr [eax] ; pop ebx ; ret
+0x08048516 : les ecx, ptr [ebx + ebx*2] ; pop esi ; pop edi ; pop ebp ; ret
+0x080483a3 : les edx, ptr [eax] ; leave ; ret
+0x0804847c : les edx, ptr [eax] ; nop ; mov ebx, dword ptr [ebp - 4] ; leave ; ret
+0x08048416 : loopne 0x80483b5 ; add al, 8 ; add ecx, ecx ; ret
+0x08048414 : mov byte ptr [0x80497e0], 1 ; leave ; ret
+0x080484b2 : mov eax, dword ptr [esp] ; ret
+0x080482b1 : mov ebx, 0x81000000 ; ret
+0x0804847f : mov ebx, dword ptr [ebp - 4] ; leave ; ret
+0x08048353 : mov ebx, dword ptr [esp] ; ret
+0x080483aa : mov esp, 0x27 ; add bl, dh ; ret
+0x0804847e : nop ; mov ebx, dword ptr [ebp - 4] ; leave ; ret
+0x0804836f : nop ; mov ebx, dword ptr [esp] ; ret
+0x0804836d : nop ; nop ; mov ebx, dword ptr [esp] ; ret
+0x0804836b : nop ; nop ; nop ; mov ebx, dword ptr [esp] ; ret
+0x08048358 : nop ; nop ; nop ; nop ; nop ; ret
+0x0804835a : nop ; nop ; nop ; nop ; ret
+0x0804835c : nop ; nop ; nop ; ret
+0x0804835e : nop ; nop ; ret
+0x0804835f : nop ; ret
+0x08048517 : or al, 0x5b ; pop esi ; pop edi ; pop ebp ; ret
+0x080482af : or al, ch ; mov ebx, 0x81000000 ; ret
+0x08048419 : or byte ptr [ecx], al ; leave ; ret
+0x08048607 : or eax, 0x3834405 ; add al, byte ptr [esi - 0x3b] ; ret
+0x08048480 : pop ebp ; cld ; leave ; ret
+0x080484ad : pop ebp ; lea esp, dword ptr [ecx - 4] ; ret
+0x0804851b : pop ebp ; ret
+0x08048518 : pop ebx ; pop esi ; pop edi ; pop ebp ; ret
+0x080482cd : pop ebx ; ret
+0x080484ac : pop ecx ; pop ebp ; lea esp, dword ptr [ecx - 4] ; ret
+0x0804851a : pop edi ; pop ebp ; ret
+0x08048519 : pop esi ; pop edi ; pop ebp ; ret
+0x080484af : popal ; cld ; ret
+0x0804839b : push 0x80497cc ; call eax
+0x080483e8 : push 0x80497cc ; call edx
+0x0804868c : push cs ; adc al, 0x41 ; ret
+0x08048689 : push cs ; and byte ptr [edi + 0xe], al ; adc al, 0x41 ; ret
+0x08048686 : push cs ; xor byte ptr [ebp + 0xe], cl ; and byte ptr [edi + 0xe], al ; adc al, 0x41 ; ret
+0x080483e7 : push eax ; push 0x80497cc ; call edx
+0x08048328 : push eax ; push esp ; push edx ; call 0x804835c
+0x080484c3 : push ebx ; call 0x8048377
+0x080484c1 : push edi ; push esi ; push ebx ; call 0x8048379
+0x0804832a : push edx ; call 0x804835a
+0x080484c2 : push esi ; push ebx ; call 0x8048378
+0x08048351 : push esp ; mov ebx, dword ptr [esp] ; ret
+0x08048329 : push esp ; push edx ; call 0x804835b
+0x080482b6 : ret
+0x080483ce : ret 0xeac1
+0x08048354 : sbb al, 0x24 ; ret
+0x080483e4 : sub esp, 0x10 ; push eax ; push 0x80497cc ; call edx
+0x0804843a : sub esp, 0x14 ; call 0x8048379
+0x08048398 : sub esp, 0x14 ; push 0x80497cc ; call eax
+0x080482ad : sub esp, 8 ; call 0x8048379
+0x080483a8 : test byte ptr [ebp + 0x27bc], 0 ; add bl, dh ; ret
+0x08048417 : xchg eax, edi ; add al, 8 ; add ecx, ecx ; ret
+0x0804839d : xchg eax, edi ; add al, 8 ; call eax
+0x080483ea : xchg eax, edi ; add al, 8 ; call edx
+0x08048687 : xor byte ptr [ebp + 0xe], cl ; and byte ptr [edi + 0xe], al ; adc al, 0x41 ; ret
+
+Unique gadgets found: 110
