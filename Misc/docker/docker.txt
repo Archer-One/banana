@@ -1,0 +1,54 @@
+docker
+安装 https://blog.csdn.net/u013814153/article/details/53925790
+安装之后 
+docker默认镜像拉取地址为国外仓库下载速度较慢，则会报错“net/http: TLS handshake timeout”。
+/etc/docker/daemon.json
+更改为{
+  "registry-mirrors": ["https://registry.docker-cn.com"]
+}
+重启 docker
+
+
+
+docker run 交互-it i交互 interactive t是terminal 将会返回一个可交互的界面
+docker ps 列出正在运行的docker 容器 
+-d 选项表示后台运行 
+docker logs [ID或者名字] 可以查看容器内部的标准输出
+可以用/bash/sh -c "cmd"来调用shell来执行命令
+docker pull 用于download镜像
+docker run -d -P training/webapp python app.py
+-P将容器内部的端口映射到我们运行的主机上
+通过docker ps 命令可以查看到容器的端口映射，docker还提供了另一个快捷方式：docker port,使用 docker port 可以查看指定 （ID或者名字）容器的某个确定端口映射到宿主机的端口号。
+我们还可以使用 docker top 来查看容器内部运行的进程
+我们可以使用 docker images 来列出本地主机上的镜像。
+
+docker commit -m="has update" -a="runoob" e218edb10161 runoob/ubuntu:v2
+各个参数说明：
+
+    -m:提交的描述信息
+
+    -a:指定镜像作者
+
+    e218edb10161：容器ID
+
+    runoob/ubuntu:v2:指定要创建的目标镜像名
+	
+	
+通过 docker build 命令来构建一个镜像
+docker build -t runoob/centos:6.7 .
+
+
+    -t ：指定要创建的目标镜像名
+
+    . ：Dockerfile 文件所在目录，可以指定Dockerfile 的绝对路径
+设置镜像标签
+
+我们可以使用 docker tag 命令，为镜像添加一个新的标签。
+
+runoob@runoob:~$ docker tag 860c279d2fec runoob/centos:dev
+我们也可以使用 -p 标识来指定容器端口绑定到主机端口。
+
+两种方式的区别是:
+
+    -P :是容器内部端口随机映射到主机的高端口。
+    -p : 是容器内部端口绑定到指定的主机端口。
