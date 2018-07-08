@@ -3,7 +3,7 @@
 #include <unistd.h>
 void A()
 {
-setvbuf(stdout, 0, _IONBF, 0);
+	setvbuf(stdout, 0, _IONBF, 0);
 	srand(time(0) ^ getpid());
 	char buf[100];
 	int magic = rand();
@@ -16,3 +16,11 @@ setvbuf(stdout, 0, _IONBF, 0);
 int main(){
 	A();
 }
+0xffffcedc magic
+0xffffce78 buf
+
+
+
+
+
+
