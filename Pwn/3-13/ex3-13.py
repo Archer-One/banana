@@ -1,4 +1,3 @@
-
 from pwn import *
 offset=116
 r=process("3-13")
